@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br"
+    <head>
+        <meta charset="UTF-8">
+        <title>formulario</title>
+        <style>
+            body{ background-image: url(https://images.tcdn.com.br/img/img_prod/1102995/papel_de_parede_mini_xadrez_lilas_4023_1_fa039a65716d3e55cfa3f8b2252cf2dd.jpg);
+            flex-direction: column;
+            align-items: center;
+
+            }
+                h1 {
+                    text-align: center;
+                    font-size : 100px;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    color: rgb(204, 183, 219);
+                }
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .box {
+                margin-top: 10px;
+                display: inline-block;
+                border: 3px solid rgb(208, 180, 228) ;
+                background-color: snow;
+            }
+            .perfil {
+                display: block;
+                width: 120px;
+                height: 120px;
+                border-radius: 100%;
+                    margin: 20px auto;
+                
+            }
+            .borda { 
+                width: 300px;
+                margin: 10px auto;
+                display: block;
+                border: 3px solid rgb(208, 180, 228) ;
+                background-color: snow;
+                text-align: center;
+
+            }
+            
+
+            button {
+                display: block;
+                margin: 20px auto;
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: rgb(208, 180, 228);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+             button:hover {
+                background-color: rgb(204, 183, 219);
+            }
+
+           .termos {
+                width: 300px;
+                margin: 10px auto;
+                display: block;
+                color: rgb(130, 116, 139);
+                text-align: center;
+    }
+
+            img {
+                margin: 20px auto;
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            </style>
+    </head>
+    <body>
+        <h1> <img src="https://i.pinimg.com/736x/82/25/9a/82259a7193bc58d04df0ea92737e2f5d.jpg" alt="roxo" width="150" height="150">
+            cadastro <img src="https://i.pinimg.com/1200x/9c/be/4d/9cbe4d57f2498a9b1b60df50e5b0ea92.jpg" alt="roxo" width="150" height="150">
+        <img class="perfil" src="https://i.pinimg.com/736x/95/03/02/950302d62f87ce84a3edfc213be21055.jpg" alt="perfil"> </h1> 
+       
+        <form action="enviar.html" method="get">
+        <label for="nome de usario">nome de usario:</label>
+        <input type="text" id="nome de usario" name="nome de usario"
+        placeholder="digite aqui"
+         required>
+
+         <div class="box">genêro:
+        <label for="feminino">feminino:</label>
+        <input type="radio" id="feminino" value="feminino" name="genêro">
+        <label for="masculino">masculino:</label>
+        <input type="radio" id="masculino" value="masculino" name="genêro">
+        <label for="outro">outro:</label>
+        <input type="radio" id="outro" value="outro" name="genêro"> 
+        </div>
+        <div class="borda">
+        <label for="email">email:</label>
+        <input type="email" id="email" name="email" placeholder="digite seu email" required>
+        </div>
+        <div class="borda">
+        <label for="senha">senha:</label>
+        <input type="password" id="senha" name="senha" placeholder="digite sua senha" required>
+        </div>
+        <div class="borda">
+        <label for="confirma senha">confirme:</label>
+        <input type="password" id="confirma senha" name="confirma senha" placeholder="confirme sua senha" required>
+        </div>
+        <div class="borda">
+        <label for="tom de roxo">qual seu tom de roxo favorito?</label>
+        <select id="tom de roxo" name="tom de roxo">
+            <option value="lilás">lilás</option>
+            <option value="purpura">purpura</option>
+            <option value="violeta">violeta</option>
+            <option value="lavanda">lavanda</option>
+        </select>
+        </div>
+        <div class="termos">
+        <label for="termos">aceito os termos de uso:</label>
+        <input type="checkbox" id="termos" name="termos" required>
+        </div>
+        <button type="submit">enviar</button>
+        </div>
+        
+    
+     </body>
+</html>
